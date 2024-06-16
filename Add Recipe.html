@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Add Recipe</title>
+    <link rel="stylesheet" href="Add Recipe.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Recipe</h1>
+        <form id="recipe-form">
+            <input type="hidden" id="recipe-index">
+            <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+            <input type="text" id="author-name" placeholder="Author Name" required>
+            <input type="text" id="total-time" placeholder="Total Time (e.g., 30 mins)" required>
+            <input type="number" id="servings" placeholder="Servings" required>
+            <textarea id="ingredients" placeholder="Ingredients (separate by commas)" required></textarea>
+            <textarea id="steps" placeholder="Steps (separate by commas)" required></textarea>
+            <input type="url" id="photo-link" placeholder="Photo Link">
+            <input type="url" id="video-link" placeholder="Video Link">
+            <button type="submit" class="rounded-button">Add Recipe</button>
+        </form>
+        <div id="recipe-list"></div>
+    </div>
+    <script src="Add Recipe.js"></script>
+</body>
+</html>
